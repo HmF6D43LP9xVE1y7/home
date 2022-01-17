@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="timott">
+		<meta name="description" content="architecture photographer based in switzerland">
+		<meta name="keywords" content="Tim, Ott, Architekturfotograf, Architekturfotografie, Architektur, Architecture, Schweiz, Switzerland">
+		<meta name="google-site-verification" content="xSkSBxSqVInMOVCsHo_F6kJqnmHd_l0r-AQa3zJwH3k">
+		<meta name="robots" content="nofollow, noimageindex">
+		<meta name="googlebot" content="nofollow, noimageindex">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="docs/docs_favicon.png">
+		<title>
+			tim ott
+		</title>
+		<style>
+			@font-face
+			{
+				font-family: 'font';
+				src: url('docs/font/docs_font.eot');
+				src: url('docs/font/docs_font.eot?#iefix') format('embedded-opentype'),
+					url('docs/font/docs_font.woff2') format('woff2'),
+					url('docs/font/docs_font.woff') format('woff'),
+					url('docs/font/docs_font.ttf') format('truetype'),
+					url('docs/font/docs_font.svg#d-dinregular') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+			::-webkit-scrollbar
+			{
+				display: none;
+			}
+			*
+			{
+				background-color: white;
+
+				left: 0;
+				right: 0;
+				padding: 0;
+				margin: 0;
+
+				-ms-overflow-style: none;
+				scrollbar-width: none;
+
+				font-family: "font";
+				text-transform: lowercase;
+				text-decoration: none;
+				color: black;
+				letter-spacing: .35;
+				line-height: 1.2;
+			}
+			.sidebar
+			{
+				position: fixed;
+				z-index: 4;
+
+				width: 165px;
+				height: 100%;
+			}
+			.header
+			{
+				background-color: white;
+				z-index: 6;
+			}
+			.footer
+			{
+				background-color: white;
+				position: absolute;
+				z-index: 5;
+
+				padding: 35px 40px 70px 40px;
+				bottom: 0px;
+			}
+			.main
+			{
+				background-color: white;
+				z-index: 0;
+			}
+			.main img
+			{
+				vertical-align: bottom;
+			}
+			.desktop
+			{
+				background-color: white;
+				z-index: 1;
+
+				pointer-events: all;
+			}
+			.mobile
+			{
+				background-color: white;
+				z-index: 1;
+
+				pointer-events: none;
+			}
+			.lightbox
+			{
+				background-color: white;
+				position: fixed;
+				z-index: 2;
+
+				display: none;
+				
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+			}
+			.lightbox img
+			{
+				background-color: transparent;
+				position: absolute;
+				z-index: 3;
+
+				margin: auto;
+
+				max-width: 100%;
+				max-height: 100%;
+			}
+			.sidebar text
+			{
+				display: block;
+
+				height: 17.5px;
+
+				font-size: 15px;
+				text-align: center;
+
+				transition: .3s;
+				-o-transition: .3s;
+				-ms-transition: .3s;
+				-moz-transition: .3s;
+				-webkit-transition: .3s;
+			}
+			.sidebar text:hover
+			{
+				color: #c0c0c0;
+
+				transition: .3s;
+				-o-transition: .3s;
+				-ms-transition: .3s;
+				-moz-transition: .3s;
+				-webkit-transition: .3s;
+			}
+			.header title
+			{
+				display: block;
+
+				height: 35px;
+
+				font-size: 30px;
+				text-align: center;
+			}
+			.header br, .footer br
+			{
+				display: block;
+				margin: 17.5px 0px 17.5px 0px;
+			}
+			.footer br
+			{
+				margin: 8.75px 0px 8.75px 0px;
+			}
+			@media screen and (max-width: 600px)
+			{
+				.sidebar
+				{
+					background-color: transparent;
+				}
+				.header, .footer
+				{
+					display: flex;
+
+					padding: 35px 0px 35px 35px;
+					width: calc(100vw - 35px);
+				}
+				.header
+				{
+					box-shadow: 0px 10px 10px rgba(0, 0, 0, .1);
+					border-radius: 0px 0px 35px 35px;
+				}
+				.footer
+				{
+					height: 17.5px;
+					box-shadow: 0px -10px 10px rgba(0, 0, 0, .1);
+					border-radius: 35px 35px 0px 0px;
+				}
+				.main
+				{
+					padding: 140px 35px 122.5px 35px;
+				}
+				.desktop, #desktop_only
+				{
+					display: none !important;
+				}
+				.lightbox
+				{
+					margin: 140px 35px 122.5px 35px;
+				}
+			}
+			@media screen and (min-width: 601px)
+			{
+				.sidebar
+				{
+					background-color: white;
+
+					box-shadow: 10px 0px 10px rgba(0, 0, 0, .1);
+					border-radius: 0px 35px 35px 0px;
+				}
+				.header
+				{
+					display: block;
+
+					padding: 70px 40px 35px 40px;
+
+					border-radius: 0px 35px 35px 0px;
+				}
+				.footer
+				{
+					display: block;
+
+					border-radius: 0px 35px 35px 0px;
+				}
+				.main
+				{
+					padding: 70px 0px 70px 200px;
+				}
+				.mobile, #mobile_only
+				{
+					display: none !important;
+				}
+				.lightbox
+				{
+					margin: 70px 35px 70px 200px;
+				}
+			}
+		</style>
+	</head>
+	<body oncontextmenu="return false">
+		<div class="sidebar">
+			<div class="header">
+				<title>
+					tim ott
+				</title>
+				<br id="desktop_only">
+				<a href="info/" id="desktop_only">
+					<text style="margin: 0px 30px 0px 30px">
+						info
+					</text>
+				</a>
+			</div>
+			<div class="footer">
+				<a href="info/" id="mobile_only" style="padding: 1px 0px 0px 0px">
+					<text>
+						info
+					</text>
+				</a>
+				<a id="mobile_only" style="width: calc(100vw - 162.5px); background-color: white;"></a>
+				<script>
+					var s="=b!isfg>#nbjmup;\'$227<\'$216<\'$21:<\'$57<\'$222<\'$227<\'$227<\'$175<\'$214<\'$21:<\'$231<\'$57<\'$::<\'$215<#!je>#npcjmf`pomz#?=twh!xjeui>#29#!ifjhiu>#32#!wjfxCpy>#1!/6!31!31#!je>#npcjmf`pomz#!tuzmf>#qbeejoh;!2qy!1qy!1qy!1qy#?=qbui!e>#N1!5b3!3!1!1!2!3.3i23b3!3!1!1!2!3!3w9b3!3!1!1!2.3!3I3b3!3!1!1!2.3.3W5[n3.2b2!2!1!1!1.2!2w/328m8!5/3!8.5/3W5b2!2!1!1!1.2.2I3[n24!3/494.5/819!3/936M26!22/216W6/494[n./145!7/987.6/75.4/582M9!:/694m.2/437./8:6.6/75!4/58B2!2!1!1!1!3!24i23b2!2!1!1!1!/:77./852[N2!22/216m5/819.3/9:8M2!6/494w6/833[#?=0twh?";
+					var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);
+				</script>
+				<a id="mobile_only" style="width: 35px; background-color: white;"></a>
+				<a href="https://www.instagram.com/timott.ch" id="mobile_only">
+					<svg width="13.125" height="17.5" viewBox="0 0 17.5 17.5" id="mobile_only" style="padding: 1px 0px 0px 0px">
+						<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+					</svg>
+				</a>
+				<br id="mobile_only">
+				<div id="desktop_only">
+					<script>
+						var s="=b!isfg>#nbjmup;\'$227<\'$216<\'$21:<\'$57<\'$222<\'$227<\'$227<\'$175<\'$214<\'$21:<\'$231<\'$57<\'$::<\'$215<#?=ufyu?fnbjm!besftt=0ufyu?=0b?";
+						var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);
+					</script>
+				</div>
+				<br>
+				<a href="https://www.instagram.com/timott.ch" id="desktop_only">
+					<text>
+						social media
+					</text>
+				</a>
+				<br id="desktop_only">
+				<a href="imprint/" id="desktop_only">
+					<text>
+						legal notice
+					</text>
+				</a>
+			</div>
+		</div>
+		<div class="main" id="main">
+			<div class="desktop">
+				<img src="docs/docs_overview_desktop.jpg" usemap="#desktop" width="100%" height="auto" title="" alt="">
+				<map name="desktop">
+					<area shape="rect" coords="2057.143,0,2742.857,960" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_000.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="960,137.143,1920,822.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_001.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="1440,960,1920,1645.714" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_002.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="0,1440,685.714,1920" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_003.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="0,2057.143,960,2742.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_004.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="274.286,2880,960,3360" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_005.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="1097.143,2400,1782.857,2880" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_006.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="1920,2400,2605.714,2880" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_007.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="1097.143,3017.143,2057.143,3702.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_008.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="2194.286,3360,2880,3840" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_009.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="480,3840,1440,4525.714" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_010.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="1920,3977.143,2880,4662.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_011.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="2057.143,4800,2742.857,5280" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_012.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="0,5417.143,960,6102.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_013.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="137.143,6240,822.857,7200" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_014.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="960,6240,1440,6925.714" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_015.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="2400,6720,2880,7405.714" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_016.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="2194.286,7542.857,2880,8502.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_017.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="960,8160,1645.714,8640" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_018.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="137.143,8640,822.857,9600" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_019.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="960,8777.143,1920,9462.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_020.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+				</map>
+			</div>
+			<div class="mobile">
+				<img src="docs/docs_overview_mobile.jpg" width="100%" height="auto" title="" alt="">
+			</div>
+		</div>
+		<div class="lightbox" id="lightbox">
+			<a href="javascript:;" onclick="lightboxClose();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+				<img id="lightboxSrc" src="">
+			</a>
+		</div>
+		<script>
+			function lightboxOpen()
+			{
+				
+				document.getElementsByTagName('*')[0].style.overflow = 'hidden';
+				document.getElementById('main').style.pointerEvents = 'none';
+				document.getElementById('main').style.opacity = '0';
+				document.getElementById('lightbox').style.display = 'block';
+				document.getElementById('lightbox').style.pointerEvents = 'all';
+			}
+			function lightboxClose()
+			{
+				document.getElementsByTagName('*')[0].style.overflow = 'visible';
+				document.getElementById('main').style.pointerEvents = 'all';
+				document.getElementById('main').style.opacity = '100';
+				document.getElementById('lightbox').style.display = 'none';
+				document.getElementById('lightbox').style.pointerEvents = 'none';
+			}
+		</script>
+		<script src="docs/js/jquery.js">
+		</script>
+		<script src="docs/js/ie8.polyfil.js">
+		</script>
+		<script src="docs/js/imageMapResizer.min.js">
+		</script>
+		<script>
+			$('map').imageMapResize();
+		</script>
+	</body>
+</html>
