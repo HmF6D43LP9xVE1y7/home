@@ -79,6 +79,11 @@
 			{
 				vertical-align: bottom;
 			}
+			area
+			{
+				display: block;
+				cursor: pointer;
+			}
 			.desktop
 			{
 				background-color: white;
@@ -258,7 +263,7 @@
 					</text>
 				</a>
 				<a id="mobile_only" style="width: calc(100vw - 162.5px); background-color: white;"></a>
-				<a href="javascript:;" id="mobile_only" onclick="mail();">
+				<a onmouseover="style.cursor = 'pointer';"  id="mobile_only" onclick="mail();">
 					<svg width="18" height="21" viewBox="0 .5 20 20" id="mobile_only" style="padding: 1px 0px 0px 0px">
 						<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
 					</svg>
@@ -271,7 +276,7 @@
 				</a>
 				<br id="mobile_only">
 				<div id="desktop_only">
-					<a href="javascript:;" onclick="mail();">
+					<a onmouseover="style.cursor = 'pointer';"  onclick="mail();">
 						<text>
 							email adress
 						</text>
@@ -295,27 +300,27 @@
 			<div class="desktop">
 				<img src="docs/docs_overview_desktop.jpg" usemap="#desktop" width="100%" height="auto" title="" alt="">
 				<map name="desktop">
-					<area shape="rect" coords="2057.143,0,2742.857,960" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_000.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="960,137.143,1920,822.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_001.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="1440,960,1920,1645.714" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_002.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="0,1440,685.714,1920" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_003.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="0,2057.143,960,2742.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_004.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="274.286,2880,960,3360" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_005.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="1097.143,2400,1782.857,2880" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_006.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="1920,2400,2605.714,2880" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_007.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="1097.143,3017.143,2057.143,3702.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_008.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="2194.286,3360,2880,3840" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_009.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="480,3840,1440,4525.714" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_010.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="1920,3977.143,2880,4662.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_011.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="2057.143,4800,2742.857,5280" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_012.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="0,5417.143,960,6102.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_013.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="137.143,6240,822.857,7200" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_014.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="960,6240,1440,6925.714" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_015.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="2400,6720,2880,7405.714" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_016.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="2194.286,7542.857,2880,8502.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_017.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="960,8160,1645.714,8640" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_018.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="137.143,8640,822.857,9600" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_019.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
-					<area shape="rect" coords="960,8777.143,1920,9462.857" href="javascript:;" onclick="document.getElementById('lightboxSrc').src=''; document.getElementById('lightboxSrc').src='docs/docs_020.jpg'; lightboxOpen();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+					<area shape="rect" coords="2057.143,0,2742.857,960" onclick="document.getElementById('lightboxSrc').src='docs/docs_000.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="960,137.143,1920,822.857" onclick="document.getElementById('lightboxSrc').src='docs/docs_001.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="1440,960,1920,1645.714" onclick="document.getElementById('lightboxSrc').src='docs/docs_002.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="0,1440,685.714,1920" onclick="document.getElementById('lightboxSrc').src='docs/docs_003.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="0,2057.143,960,2742.857" onclick="document.getElementById('lightboxSrc').src='docs/docs_004.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="274.286,2880,960,3360" onclick="document.getElementById('lightboxSrc').src='docs/docs_005.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="1097.143,2400,1782.857,2880" onclick="document.getElementById('lightboxSrc').src='docs/docs_006.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="1920,2400,2605.714,2880" onclick="document.getElementById('lightboxSrc').src='docs/docs_007.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="1097.143,3017.143,2057.143,3702.857" onclick="document.getElementById('lightboxSrc').src='docs/docs_008.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="2194.286,3360,2880,3840" onclick="document.getElementById('lightboxSrc').src='docs/docs_009.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="480,3840,1440,4525.714" onclick="document.getElementById('lightboxSrc').src='docs/docs_010.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="1920,3977.143,2880,4662.857" onclick="document.getElementById('lightboxSrc').src='docs/docs_011.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="2057.143,4800,2742.857,5280" onclick="document.getElementById('lightboxSrc').src='docs/docs_012.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="0,5417.143,960,6102.857" onclick="document.getElementById('lightboxSrc').src='docs/docs_013.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="137.143,6240,822.857,7200" onclick="document.getElementById('lightboxSrc').src='docs/docs_014.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="960,6240,1440,6925.714" onclick="document.getElementById('lightboxSrc').src='docs/docs_015.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="2400,6720,2880,7405.714" onclick="document.getElementById('lightboxSrc').src='docs/docs_016.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="2194.286,7542.857,2880,8502.857" onclick="document.getElementById('lightboxSrc').src='docs/docs_017.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="960,8160,1645.714,8640" onclick="document.getElementById('lightboxSrc').src='docs/docs_018.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="137.143,8640,822.857,9600" onclick="document.getElementById('lightboxSrc').src='docs/docs_019.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
+					<area shape="rect" coords="960,8777.143,1920,9462.857" onclick="document.getElementById('lightboxSrc').src='docs/docs_020.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
 				</map>
 			</div>
 			<div class="mobile">
@@ -323,14 +328,13 @@
 			</div>
 		</div>
 		<div class="lightbox" id="lightbox">
-			<a href="javascript:;" onclick="lightboxClose();" title="&#169; Tim Ott" alt="&#169; Tim Ott">
+			<a onmouseover="style.cursor = 'pointer';" onclick="lightboxClose();" title="&#169; tim ott" alt="&#169; tim ott">
 				<img id="lightboxSrc" src="">
 			</a>
 		</div>
 		<script>
 			function lightboxOpen()
 			{
-				
 				document.getElementsByTagName('*')[0].style.overflow = 'hidden';
 				document.getElementById('main').style.pointerEvents = 'none';
 				document.getElementById('main').style.opacity = '0';
@@ -344,9 +348,8 @@
 				document.getElementById('main').style.opacity = '100';
 				document.getElementById('lightbox').style.display = 'none';
 				document.getElementById('lightbox').style.pointerEvents = 'none';
+				document.getElementById('lightboxSrc').src=''; 
 			}
-		</script>
-		<script>
 			function mail()
 			{
 				let encoded = window.atob("dGltLm90dEBnbXguY2g");
