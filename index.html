@@ -297,7 +297,7 @@
 			</div>
 		</div>
 		<div class="main" id="main">
-			<div class="desktop">
+			<div class="desktop" id="desktop">
 				<img src="docs/docs_overview_desktop.jpg" usemap="#desktop" width="100%" height="auto" title="" alt="">
 				<map name="desktop">
 					<area shape="rect" coords="2057.143,0,2742.857,960" onclick="document.getElementById('lightboxSrc').src='docs/docs_000.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
@@ -336,7 +336,7 @@
 			function lightboxOpen()
 			{
 				document.getElementsByTagName('*')[0].style.overflow = 'hidden';
-				document.getElementById('main').style.pointerEvents = 'none';
+				document.getElementById('desktop').style.pointerEvents = 'none';
 				document.getElementById('main').style.opacity = '0';
 				document.getElementById('lightbox').style.display = 'block';
 				document.getElementById('lightbox').style.pointerEvents = 'all';
@@ -344,7 +344,7 @@
 			function lightboxClose()
 			{
 				document.getElementsByTagName('*')[0].style.overflow = 'visible';
-				document.getElementById('main').style.pointerEvents = 'all';
+				document.getElementById('desktop').style.pointerEvents = 'all';
 				document.getElementById('main').style.opacity = '100';
 				document.getElementById('lightbox').style.display = 'none';
 				document.getElementById('lightbox').style.pointerEvents = 'none';
