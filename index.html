@@ -206,6 +206,10 @@
 				{
 					display: none !important;
 				}
+				.image
+				{
+					content: url('docs/docs_overview_mobile.jpg');
+				}
 				.lightbox
 				{
 					margin: 130px 35px 112.5px 35px;
@@ -241,6 +245,10 @@
 				.mobile, #mobile_only
 				{
 					display: none !important;
+				}
+				.image
+				{
+					content: url('docs/docs_overview_desktop.jpg');
 				}
 				.lightbox
 				{
@@ -304,7 +312,7 @@
 		</div>
 		<div class="main" id="main">
 			<div class="desktop" id="desktop">
-				<img src="docs/docs_overview_desktop.jpg" usemap="#desktop" width="100%" height="auto" title="" alt="">
+				<img class="image" usemap="#desktop" width="100%" height="auto" title="" alt="">
 				<map name="desktop">
 					<area shape="rect" coords="2057.143,0,2742.857,960" onclick="document.getElementById('lightboxSrc').src='docs/docs_000.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
 					<area shape="rect" coords="960,137.143,1920,822.857" onclick="document.getElementById('lightboxSrc').src='docs/docs_001.jpg'; lightboxOpen();" title="&#169; tim ott" alt="&#169; tim ott">
@@ -330,7 +338,7 @@
 				</map>
 			</div>
 			<div class="mobile">
-				<img src="docs/docs_overview_mobile.jpg" width="100%" height="auto" title="" alt="">
+				<img class="image" width="100%" height="auto" title="" alt="">
 			</div>
 		</div>
 		<div class="lightbox" id="lightbox">
